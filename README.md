@@ -1,4 +1,2 @@
-# MDQube
-Private repository for MDQube proyect -- TOP SECRET
-
-first commit
+# MDQubeSAT
+Repository for MDQube proyect
