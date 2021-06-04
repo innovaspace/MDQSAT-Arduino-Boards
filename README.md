@@ -1,2 +1,2 @@
 # MDQubeSAT
-Repository for MDQube proyect
+PUBLIC Repository for MDQubeSAT-1
