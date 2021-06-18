@@ -1,4 +1,4 @@
-# MDQubeSAT
+# MDQubeSAT-1
 PUBLIC Repository for MDQubeSAT-1
 
 JUST FOR BOARDS!!!
