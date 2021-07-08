@@ -13,7 +13,7 @@
           "architecture": "samd",
           "version": "0.1",
           "category": "Contributed",
-          "url": "https://github.com/innovaspace/eduqube/raw/main/boards/InnovaSpace-0.1.zip",
+          "url": "https://github.com/innovaspace/MDQubeSAT-1/raw/main/EduQube/InnovaSpace-0.1.zip",
           "archiveFileName": "InnovaSpace-0.1.zip",
           "checksum": "SHA-256:988C1A98A63A0F3D80CD0365CF9EDA2384AFA930A870203AF13E0306F4D0D4C9",
           "size": "1627863",
