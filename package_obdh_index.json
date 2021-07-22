@@ -20,49 +20,9 @@
           "boards": [
             {
               "name": "MDQubeSAT-1 OBDH"
-            }
-          ],
-          "toolsDependencies":
-          [
-            {
-              "packager": "arduino",
-              "name": "arm-none-eabi-gcc",
-              "version": "7-2017q4"
             },
             {
-              "packager": "arduino",
-              "name": "bossac",
-              "version": "1.8.0-48-gb176eee"
-            },
-            {
-              "packager": "arduino",
-              "name": "openocd",
-              "version": "0.10.0-arduino9"
-            },
-            {
-              "packager": "arduino",
-              "name": "CMSIS",
-              "version": "4.5.0"
-            },
-            {
-              "packager": "arduino",
-              "name": "CMSIS-Atmel",
-              "version": "1.2.0"
-            }
-          ]
-        },
-        {
-          "name": "Robo HAT Boards",
-          "architecture": "samd",
-          "version": "0.0.24",
-          "category": "Contributed",
-          "url": "https://github.com/robotics-masters/mm1-hat-arduino/blob/master/custom_board/RoboHat-0.0.24.zip?raw=true",
-          "archiveFileName": "RoboHat-0.0.24.zip",
-          "checksum": "SHA-256:750fedea5f8ac247a4534dcd3b034c8cb9b27be80c631b59761f8aa87a67d737",
-          "size": "3661545",
-          "boards": [
-            {
-              "name": "Robo HAT MM1"
+              "name": "MDQubeSAT-1 ADCS"
             }
           ],
           "toolsDependencies":
