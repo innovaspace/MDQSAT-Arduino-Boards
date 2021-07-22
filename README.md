@@ -1,7 +1,9 @@
 # MDQubeSAT-1
+
 PUBLIC Repository for MDQubeSAT-1
 
-JUST FOR BOARDS!!!
+## JUST FOR BOARDS!!!
+
 Do not post coding in this repo.
 
 For private code repo use this:
