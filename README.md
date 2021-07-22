@@ -1,4 +1,4 @@
-# MDQubeSAT-1 #
+# MDQubeSAT-1
 
 PUBLIC Repository for MDQubeSAT-1
 
