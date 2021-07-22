@@ -15,8 +15,8 @@
           "category": "Contributed",
           "url": "https://github.com/innovaspace/MDQubeSAT-1/raw/main/MDQubeSAT-OBDH.zip",
           "archiveFileName": "MDQubeSAT-OBDH.zip",
-          "checksum": "SHA-256:B43D94145D99FF980C95B72E6B69575E2F2FFF05E462C3F57C0F23E95CD8B611",
-          "size": "6374842",
+          "checksum": "SHA-256:D9151C01EE3BF0E6A1E9D0D34A376035547624AA87FF9A1F4A7226D5EE6AE1F0",
+          "size": "6372883",
           "boards": [
             {
               "name": "MDQubeSAT-1 OBDH"
