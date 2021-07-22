@@ -5,7 +5,7 @@ PUBLIC Repository for MDQubeSAT-1
 ### JUST FOR BOARDS!!!
 
 Do not post coding in this repo.    
-For private code repo use this:    
+**For private code repo use this:**    
 https://github.com/innovaspace/MDQubeSOFT.git
 
 -----------------------------------------------------------------------------
