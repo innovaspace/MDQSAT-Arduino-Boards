@@ -13,8 +13,8 @@
           "architecture": "samd",
           "version": "0.1",
           "category": "Contributed",
-          "url": "https://github.com/innovaspace/MDQubeSAT-1/raw/main/MDQubeSAT-OBDH.zip",
-          "archiveFileName": "MDQubeSAT-OBDH.zip",
+          "url": "https://github.com/innovaspace/MDQubeSAT-1/raw/main/MDQubeSAT.zip",
+          "archiveFileName": "MDQubeSAT.zip",
           "checksum": "SHA-256:D9151C01EE3BF0E6A1E9D0D34A376035547624AA87FF9A1F4A7226D5EE6AE1F0",
           "size": "6372883",
           "boards": [
