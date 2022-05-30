@@ -15,7 +15,7 @@
           "category": "Contributed",
           "url": "https://github.com/innovaspace/MDQubeSAT-1/raw/main/MDQubeSAT_0.1.0.zip",
           "archiveFileName": "MDQubeSAT_0.1.0.zip",
-          "checksum": "SHA-256:C:996DFA9AFA73C87B7F7DADEA2296BD925ED508BE5671616BCD5B63E175ABCE46",
+          "checksum": "SHA-256:996DFA9AFA73C87B7F7DADEA2296BD925ED508BE5671616BCD5B63E175ABCE46",
           "size": "6373088",
           "boards": [
             {
@@ -61,7 +61,7 @@
           "category": "Contributed",
           "url": "https://github.com/innovaspace/MDQubeSAT-1/raw/main/MDQubeSAT_0.1.1.zip",
           "archiveFileName": "MDQubeSAT_0.1.1.zip",
-          "checksum": "SHA-256:C:3359BE9330339E11A19E7D8F0FAB89A443F06207602208702AFFA7D0F3055B05",
+          "checksum": "SHA-256:3359BE9330339E11A19E7D8F0FAB89A443F06207602208702AFFA7D0F3055B05",
           "size": "6373126",
           "boards": [
             {
