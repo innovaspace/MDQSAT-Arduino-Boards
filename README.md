@@ -10,7 +10,7 @@ https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
 MDQSAT Boards:
 https://github.com/innovaspace/MDQSAT-Arduino-Boards/raw/main/boards_ide/package_obdh_index.json
 
-### INSTALL -- ARDUINO IDE
+### INSTALL -- ARDUINO CLI
 
 Adafruit boards:
 
