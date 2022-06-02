@@ -1,0 +1,150 @@
+# Copyright (c) 2014-2015 Arduino LLC.  All right reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+menu.cache=Cache
+menu.speed=CPU Speed
+menu.opt=Optimize
+menu.maxqspi=Max QSPI
+menu.usbstack=USB Stack
+menu.debug=Debug
+
+
+# MDQubeSAT-1 OBDH
+# ------------------------------
+mdqubesat_obdh.name=MDQubeSAT-1 OBDH
+mdqubesat_obdh.vid.0=0x239A
+mdqubesat_obdh.pid.0=0x8020
+mdqubesat_obdh.vid.1=0x239A
+mdqubesat_obdh.pid.1=0x0020
+mdqubesat_obdh.upload.tool=bossac18
+mdqubesat_obdh.upload.protocol=sam-ba
+mdqubesat_obdh.upload.maximum_size=507904
+mdqubesat_obdh.upload.offset=0x4000
+mdqubesat_obdh.upload.use_1200bps_touch=true
+mdqubesat_obdh.upload.wait_for_upload_port=true
+mdqubesat_obdh.upload.native_usb=true
+mdqubesat_obdh.build.mcu=cortex-m4
+#mdqubesat_obdh.build.f_cpu=120000000L
+mdqubesat_obdh.build.usb_product="MDQubeSAT-1 OBHD"
+mdqubesat_obdh.build.usb_manufacturer="Innova Space"
+mdqubesat_obdh.build.board=OBDH
+mdqubesat_obdh.build.core=arduino
+mdqubesat_obdh.build.extra_flags=-D__SAMD51J19A__ -Dmdqubesat_obdh_EXPRESS -D__SAMD51__ {build.usb_flags} -D__FPU_PRESENT -DARM_MATH_CM4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
+mdqubesat_obdh.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+mdqubesat_obdh.build.openocdscript=openocd_scripts/arduino_zero.cfg
+mdqubesat_obdh.build.variant=mdqubesat_obdh
+mdqubesat_obdh.build.variant_system_lib=
+mdqubesat_obdh.build.vid=0x239A
+mdqubesat_obdh.build.pid=0x8020
+mdqubesat_obdh.bootloader.tool=openocd
+mdqubesat_obdh.bootloader.file=metroM4/bootloader-metro_m4-v2.0.0-adafruit.5.bin
+mdqubesat_obdh.compiler.arm.cmsis.ldflags="-L{runtime.tools.CMSIS-5.4.0.path}/CMSIS/Lib/GCC/" "-L{build.variant.path}" -larm_cortexM4lf_math -mfloat-abi=hard -mfpu=fpv4-sp-d16
+mdqubesat_obdh.menu.cache.on=Enabled
+mdqubesat_obdh.menu.cache.on.build.cache_flags=-DENABLE_CACHE
+mdqubesat_obdh.menu.cache.off=Disabled
+mdqubesat_obdh.menu.cache.off.build.cache_flags=
+mdqubesat_obdh.menu.speed.120=120 MHz (standard)
+mdqubesat_obdh.menu.speed.120.build.f_cpu=120000000L
+mdqubesat_obdh.menu.speed.150=150 MHz (overclock)
+mdqubesat_obdh.menu.speed.150.build.f_cpu=150000000L
+mdqubesat_obdh.menu.speed.180=180 MHz (overclock)
+mdqubesat_obdh.menu.speed.180.build.f_cpu=180000000L
+mdqubesat_obdh.menu.speed.200=200 MHz (overclock)
+mdqubesat_obdh.menu.speed.200.build.f_cpu=200000000L
+mdqubesat_obdh.menu.opt.small=Small (-Os) (standard)
+mdqubesat_obdh.menu.opt.small.build.flags.optimize=-Os
+mdqubesat_obdh.menu.opt.fast=Fast (-O2)
+mdqubesat_obdh.menu.opt.fast.build.flags.optimize=-O2
+mdqubesat_obdh.menu.opt.faster=Faster (-O3)
+mdqubesat_obdh.menu.opt.faster.build.flags.optimize=-O3
+mdqubesat_obdh.menu.opt.fastest=Fastest (-Ofast)
+mdqubesat_obdh.menu.opt.fastest.build.flags.optimize=-Ofast
+mdqubesat_obdh.menu.opt.dragons=Here be dragons (-Ofast -funroll-loops)
+mdqubesat_obdh.menu.opt.dragons.build.flags.optimize=-Ofast -funroll-loops
+mdqubesat_obdh.menu.maxqspi.50=50 MHz (standard)
+mdqubesat_obdh.menu.maxqspi.50.build.flags.maxqspi=-DVARIANT_QSPI_BAUD_DEFAULT=50000000
+mdqubesat_obdh.menu.maxqspi.fcpu=CPU Speed / 2
+mdqubesat_obdh.menu.maxqspi.fcpu.build.flags.maxqspi=-DVARIANT_QSPI_BAUD_DEFAULT=({build.f_cpu})
+mdqubesat_obdh.menu.usbstack.arduino=Arduino
+mdqubesat_obdh.menu.usbstack.tinyusb=TinyUSB
+mdqubesat_obdh.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
+mdqubesat_obdh.menu.debug.off=Off
+mdqubesat_obdh.menu.debug.on=On
+mdqubesat_obdh.menu.debug.on.build.flags.debug=-g
+
+
+# MDQubeSAT-1 ADCS
+# ------------------------------
+mdqubesat_adcs.name=MDQubeSAT-1 ADCS
+mdqubesat_adcs.vid.0=0x239A
+mdqubesat_adcs.pid.0=0x8020
+mdqubesat_adcs.vid.1=0x239A
+mdqubesat_adcs.pid.1=0x0020
+mdqubesat_adcs.upload.tool=bossac18
+mdqubesat_adcs.upload.protocol=sam-ba
+mdqubesat_adcs.upload.maximum_size=507904
+mdqubesat_adcs.upload.offset=0x4000
+mdqubesat_adcs.upload.use_1200bps_touch=true
+mdqubesat_adcs.upload.wait_for_upload_port=true
+mdqubesat_adcs.upload.native_usb=true
+mdqubesat_adcs.build.mcu=cortex-m4
+#mdqubesat_adcs.build.f_cpu=120000000L
+mdqubesat_adcs.build.usb_product="MDQubeSAT-1 ADCS"
+mdqubesat_adcs.build.usb_manufacturer="Innova Space"
+mdqubesat_adcs.build.board=ADCS
+mdqubesat_adcs.build.core=arduino
+mdqubesat_adcs.build.extra_flags=-D__SAMD51J19A__ -Dmdqubesat_adcs_EXPRESS -D__SAMD51__ {build.usb_flags} -D__FPU_PRESENT -DARM_MATH_CM4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
+mdqubesat_adcs.build.ldscript=linker_scripts/gcc/flash_without_bootloader.ld
+mdqubesat_adcs.build.openocdscript=openocd_scripts/arduino_zero.cfg
+mdqubesat_adcs.build.variant=mdqubesat_adcs
+mdqubesat_adcs.build.variant_system_lib=
+mdqubesat_adcs.build.vid=0x239A
+mdqubesat_adcs.build.pid=0x8020
+mdqubesat_adcs.bootloader.tool=openocd
+mdqubesat_adcs.bootloader.file=metroM4/bootloader-metro_m4-v2.0.0-adafruit.5.bin
+mdqubesat_adcs.compiler.arm.cmsis.ldflags="-L{runtime.tools.CMSIS-5.4.0.path}/CMSIS/Lib/GCC/" "-L{build.variant.path}" -larm_cortexM4lf_math -mfloat-abi=hard -mfpu=fpv4-sp-d16
+mdqubesat_adcs.menu.cache.on=Enabled
+mdqubesat_adcs.menu.cache.on.build.cache_flags=-DENABLE_CACHE
+mdqubesat_adcs.menu.cache.off=Disabled
+mdqubesat_adcs.menu.cache.off.build.cache_flags=
+mdqubesat_adcs.menu.speed.120=120 MHz (standard)
+mdqubesat_adcs.menu.speed.120.build.f_cpu=120000000L
+mdqubesat_adcs.menu.speed.150=150 MHz (overclock)
+mdqubesat_adcs.menu.speed.150.build.f_cpu=150000000L
+mdqubesat_adcs.menu.speed.180=180 MHz (overclock)
+mdqubesat_adcs.menu.speed.180.build.f_cpu=180000000L
+mdqubesat_adcs.menu.speed.200=200 MHz (overclock)
+mdqubesat_adcs.menu.speed.200.build.f_cpu=200000000L
+mdqubesat_adcs.menu.opt.small=Small (-Os) (standard)
+mdqubesat_adcs.menu.opt.small.build.flags.optimize=-Os
+mdqubesat_adcs.menu.opt.fast=Fast (-O2)
+mdqubesat_adcs.menu.opt.fast.build.flags.optimize=-O2
+mdqubesat_adcs.menu.opt.faster=Faster (-O3)
+mdqubesat_adcs.menu.opt.faster.build.flags.optimize=-O3
+mdqubesat_adcs.menu.opt.fastest=Fastest (-Ofast)
+mdqubesat_adcs.menu.opt.fastest.build.flags.optimize=-Ofast
+mdqubesat_adcs.menu.opt.dragons=Here be dragons (-Ofast -funroll-loops)
+mdqubesat_adcs.menu.opt.dragons.build.flags.optimize=-Ofast -funroll-loops
+mdqubesat_adcs.menu.maxqspi.50=50 MHz (standard)
+mdqubesat_adcs.menu.maxqspi.50.build.flags.maxqspi=-DVARIANT_QSPI_BAUD_DEFAULT=50000000
+mdqubesat_adcs.menu.maxqspi.fcpu=CPU Speed / 2
+mdqubesat_adcs.menu.maxqspi.fcpu.build.flags.maxqspi=-DVARIANT_QSPI_BAUD_DEFAULT=({build.f_cpu})
+mdqubesat_adcs.menu.usbstack.arduino=Arduino
+mdqubesat_adcs.menu.usbstack.tinyusb=TinyUSB
+mdqubesat_adcs.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
+mdqubesat_adcs.menu.debug.off=Off
+mdqubesat_adcs.menu.debug.on=On
+mdqubesat_adcs.menu.debug.on.build.flags.debug=-g
