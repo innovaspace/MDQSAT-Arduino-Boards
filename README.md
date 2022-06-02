@@ -1,22 +1,21 @@
-# MDQubeSAT-1
+# MDQSAT-Arduino-Boards
 
-PUBLIC Repository for MDQubeSAT-1
+PUBLIC Repository for MDQSAT Arduino board definitions
 
-### JUST FOR BOARDS!!!
+### INSTALL -- ARDUINO IDE
 
-Do not post coding in this repo.    
-**For private code repo use this:**    
-https://github.com/innovaspace/MDQubeSOFT.git
-
------------------------------------------------------------------------------
-
-### HOW TO INSTALL -- ARDUINO IDE
-
-- Need to install Adafruit boards for definitions    
+Adafruit boards:
 https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
 
-- Links for MDQubeSAT-1 v2.0 boards (OBDH & ADCS)    
-https://github.com/innovaspace/MDQubeSAT-1/raw/main/package_obdh_index.json
+MDQSAT Boards:
+https://github.com/innovaspace/MDQSAT-Arduino-Boards/raw/main/boards_ide/package_obdh_index.json
 
-- Link for MDQubeSAT-1 v1.0 board (OBC)    
-https://raw.githubusercontent.com/sparkfun/Arduino_Boards/master/IDE_Board_Manager/package_sparkfun_index.json
+### INSTALL -- ARDUINO IDE
+
+Adafruit boards:
+
+    arduino-cli core install adafruit:samd --additional-urls "https://adafruit.github.io/arduino-board-index/package_adafruit_index.json"
+
+MDQSAT Boards
+
+    arduino-cli core install obdh:samd --additional-urls "https://github.com/innovaspace/MDQSAT-Arduino-Boards/raw/main/boards_ide/package_obdh_index.json"
