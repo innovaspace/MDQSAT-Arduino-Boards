@@ -91,7 +91,7 @@ extern "C"
 #define PIN_SERIAL1_TX      (25u)
 #define PAD_SERIAL1_TX      (UART_TX_PAD_0)
 #define PAD_SERIAL1_RX      (SERCOM_RX_PAD_1)
-#define SERCOM_SERIAL2		  sercom0
+#define SERCOM_SERIAL1		  sercom0
 
 // UART EXPERIMENTAL LOAD (Serial2) - SERCOM 1
 #define PIN_SERIAL2_RX      (26u)
