@@ -80,6 +80,29 @@ extern "C"
  */
 // #define digitalPinToTimer(P)
 
+#define PIN_A0               (14ul)
+#define PIN_A1               (PIN_A0 + 1)
+#define PIN_A2               (PIN_A0 + 2)
+#define PIN_A3               (PIN_A0 + 3)
+#define PIN_A4               (PIN_A0 + 4)
+#define PIN_A5               (PIN_A0 + 5)
+#define PIN_A6               (PIN_A0 + 6)
+#define PIN_A7               (PIN_A0 + 7)
+#define PIN_DAC0             PIN_A0
+#define PIN_DAC1             PIN_A1
+
+static const uint8_t A0  = PIN_A0;
+static const uint8_t A1  = PIN_A1;
+static const uint8_t A2  = PIN_A2;
+static const uint8_t A3  = PIN_A3;
+static const uint8_t A4  = PIN_A4;
+static const uint8_t A5  = PIN_A5;
+static const uint8_t A6  = PIN_A6 ;
+static const uint8_t A7  = PIN_A7 ;
+
+static const uint8_t DAC0 = PIN_DAC0;
+static const uint8_t DAC1 = PIN_DAC1;
+
 #define ADC_RESOLUTION		12
 
 /*
@@ -174,6 +197,7 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 /*
  * USB
  */
+#define PIN_USB_HOST_ENABLE (43ul)
 #define PIN_USB_DM          (39ul)
 #define PIN_USB_DP          (40ul)
 
