@@ -99,6 +99,58 @@
               "version": "1.2.0"
             }
           ]
+        },
+        {
+          "name": "Innova Space (MDQubeSAT) BOARDS",
+          "architecture": "samd",
+          "version": "0.2.0",
+          "category": "Contributed",
+          "url": "https://github.com/innovaspace/MDQSAT-Arduino-Boards/raw/main/boards_ide/MDQSAT_0.2.0.zip",
+          "archiveFileName": "MDQSAT_0.2.0.zip",
+          "checksum": "SHA-256:20DF45D07CE95E324702FE8D897F7FE2BA40DC08D8B463903069D7F23BAF1FD6",
+          "size": "6387647",
+          "boards": [
+            {
+              "name": "MDQubeSAT-1 OBDH"
+            },
+            {
+              "name": "MDQubeSAT-1 ADCS"
+            },
+            {
+              "name": "MDQSAT-1 OBDH"
+            },
+            {
+              "name": "MDQSAT-1 ADCS"
+            }
+          ],
+          "toolsDependencies":
+          [
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.8.0-48-gb176eee"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.10.0-arduino9"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS-Atmel",
+              "version": "1.2.0"
+            }
+          ]
         }
       ],
       "tools":
