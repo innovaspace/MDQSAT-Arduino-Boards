@@ -42,7 +42,7 @@ mdqubesat_obdh.build.usb_product="MDQubeSAT-1 OBHD"
 mdqubesat_obdh.build.usb_manufacturer="Innova Space"
 mdqubesat_obdh.build.board=OBDH
 mdqubesat_obdh.build.core=arduino
-mdqubesat_obdh.build.extra_flags=-D__SAMD51J19A__ -Dmdqubesat_obdh_EXPRESS -D__SAMD51__ {build.usb_flags} -D__FPU_PRESENT -DARM_MATH_CM4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
+mdqubesat_obdh.build.extra_flags=-D__SAMD51J19A__ -Dmdqubesat_obdh -D__SAMD51__ {build.usb_flags} -D__FPU_PRESENT -DARM_MATH_CM4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
 mdqubesat_obdh.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
 mdqubesat_obdh.build.openocdscript=openocd_scripts/arduino_zero.cfg
 mdqubesat_obdh.build.variant=mdqubesat_obdh
@@ -106,7 +106,7 @@ mdqubesat_adcs.build.usb_product="MDQubeSAT-1 ADCS"
 mdqubesat_adcs.build.usb_manufacturer="Innova Space"
 mdqubesat_adcs.build.board=ADCS
 mdqubesat_adcs.build.core=arduino
-mdqubesat_adcs.build.extra_flags=-D__SAMD51J19A__ -Dmdqubesat_adcs_EXPRESS -D__SAMD51__ {build.usb_flags} -D__FPU_PRESENT -DARM_MATH_CM4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
+mdqubesat_adcs.build.extra_flags=-D__SAMD51J19A__ -Dmdqubesat_adcs -D__SAMD51__ {build.usb_flags} -D__FPU_PRESENT -DARM_MATH_CM4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
 mdqubesat_adcs.build.ldscript=linker_scripts/gcc/flash_without_bootloader.ld
 mdqubesat_adcs.build.openocdscript=openocd_scripts/arduino_zero.cfg
 mdqubesat_adcs.build.variant=mdqubesat_adcs
@@ -148,3 +148,131 @@ mdqubesat_adcs.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
 mdqubesat_adcs.menu.debug.off=Off
 mdqubesat_adcs.menu.debug.on=On
 mdqubesat_adcs.menu.debug.on.build.flags.debug=-g
+
+
+# MDQSAT-1 OBDH
+# ------------------------------
+mdqsat_obdh.name=MDQSAT-1 OBDH
+mdqsat_obdh.vid.0=0x239A
+mdqsat_obdh.pid.0=0x8020
+mdqsat_obdh.vid.1=0x239A
+mdqsat_obdh.pid.1=0x0020
+mdqsat_obdh.upload.tool=bossac18
+mdqsat_obdh.upload.protocol=sam-ba
+mdqsat_obdh.upload.maximum_size=507904
+mdqsat_obdh.upload.offset=0x4000
+mdqsat_obdh.upload.use_1200bps_touch=true
+mdqsat_obdh.upload.wait_for_upload_port=true
+mdqsat_obdh.upload.native_usb=true
+mdqsat_obdh.build.mcu=cortex-m4
+#mdqsat_obdh.build.f_cpu=120000000L
+mdqsat_obdh.build.usb_product="MDQSAT-1 OBHD"
+mdqsat_obdh.build.usb_manufacturer="Innova Space"
+mdqsat_obdh.build.board=MDQSAT-OBDH
+mdqsat_obdh.build.core=arduino
+mdqsat_obdh.build.extra_flags=-D__SAMD51J19A__ -Dmdqsat_obdh -D__SAMD51__ {build.usb_flags} -D__FPU_PRESENT -DARM_MATH_CM4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
+mdqsat_obdh.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+mdqsat_obdh.build.openocdscript=openocd_scripts/arduino_zero.cfg
+mdqsat_obdh.build.variant=mdqsat_obdh
+mdqsat_obdh.build.variant_system_lib=
+mdqsat_obdh.build.vid=0x239A
+mdqsat_obdh.build.pid=0x8020
+mdqsat_obdh.bootloader.tool=openocd
+mdqsat_obdh.bootloader.file=metroM4/bootloader-metro_m4-v2.0.0-adafruit.5.bin
+mdqsat_obdh.compiler.arm.cmsis.ldflags="-L{runtime.tools.CMSIS-5.4.0.path}/CMSIS/Lib/GCC/" "-L{build.variant.path}" -larm_cortexM4lf_math -mfloat-abi=hard -mfpu=fpv4-sp-d16
+mdqsat_obdh.menu.cache.on=Enabled
+mdqsat_obdh.menu.cache.on.build.cache_flags=-DENABLE_CACHE
+mdqsat_obdh.menu.cache.off=Disabled
+mdqsat_obdh.menu.cache.off.build.cache_flags=
+mdqsat_obdh.menu.speed.120=120 MHz (standard)
+mdqsat_obdh.menu.speed.120.build.f_cpu=120000000L
+mdqsat_obdh.menu.speed.150=150 MHz (overclock)
+mdqsat_obdh.menu.speed.150.build.f_cpu=150000000L
+mdqsat_obdh.menu.speed.180=180 MHz (overclock)
+mdqsat_obdh.menu.speed.180.build.f_cpu=180000000L
+mdqsat_obdh.menu.speed.200=200 MHz (overclock)
+mdqsat_obdh.menu.speed.200.build.f_cpu=200000000L
+mdqsat_obdh.menu.opt.small=Small (-Os) (standard)
+mdqsat_obdh.menu.opt.small.build.flags.optimize=-Os
+mdqsat_obdh.menu.opt.fast=Fast (-O2)
+mdqsat_obdh.menu.opt.fast.build.flags.optimize=-O2
+mdqsat_obdh.menu.opt.faster=Faster (-O3)
+mdqsat_obdh.menu.opt.faster.build.flags.optimize=-O3
+mdqsat_obdh.menu.opt.fastest=Fastest (-Ofast)
+mdqsat_obdh.menu.opt.fastest.build.flags.optimize=-Ofast
+mdqsat_obdh.menu.opt.dragons=Here be dragons (-Ofast -funroll-loops)
+mdqsat_obdh.menu.opt.dragons.build.flags.optimize=-Ofast -funroll-loops
+mdqsat_obdh.menu.maxqspi.50=50 MHz (standard)
+mdqsat_obdh.menu.maxqspi.50.build.flags.maxqspi=-DVARIANT_QSPI_BAUD_DEFAULT=50000000
+mdqsat_obdh.menu.maxqspi.fcpu=CPU Speed / 2
+mdqsat_obdh.menu.maxqspi.fcpu.build.flags.maxqspi=-DVARIANT_QSPI_BAUD_DEFAULT=({build.f_cpu})
+mdqsat_obdh.menu.usbstack.arduino=Arduino
+mdqsat_obdh.menu.usbstack.tinyusb=TinyUSB
+mdqsat_obdh.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
+mdqsat_obdh.menu.debug.off=Off
+mdqsat_obdh.menu.debug.on=On
+mdqsat_obdh.menu.debug.on.build.flags.debug=-g
+
+
+# MDQSAT-1 ADCS
+# ------------------------------
+mdqsat_adcs.name=MDQSAT-1 ADCS
+mdqsat_adcs.vid.0=0x239A
+mdqsat_adcs.pid.0=0x8020
+mdqsat_adcs.vid.1=0x239A
+mdqsat_adcs.pid.1=0x0020
+mdqsat_adcs.upload.tool=bossac18
+mdqsat_adcs.upload.protocol=sam-ba
+mdqsat_adcs.upload.maximum_size=507904
+mdqsat_adcs.upload.offset=0x4000
+mdqsat_adcs.upload.use_1200bps_touch=true
+mdqsat_adcs.upload.wait_for_upload_port=true
+mdqsat_adcs.upload.native_usb=true
+mdqsat_adcs.build.mcu=cortex-m4
+#mdqsat_adcs.build.f_cpu=120000000L
+mdqsat_adcs.build.usb_product="MDQSAT-1 ADCS"
+mdqsat_adcs.build.usb_manufacturer="Innova Space"
+mdqsat_adcs.build.board=MDQSAT-ADCS
+mdqsat_adcs.build.core=arduino
+mdqsat_adcs.build.extra_flags=-D__SAMD51J19A__ -Dmdqsat_adcs -D__SAMD51__ {build.usb_flags} -D__FPU_PRESENT -DARM_MATH_CM4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
+mdqsat_adcs.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+mdqsat_adcs.build.openocdscript=openocd_scripts/arduino_zero.cfg
+mdqsat_adcs.build.variant=mdqsat_adcs
+mdqsat_adcs.build.variant_system_lib=
+mdqsat_adcs.build.vid=0x239A
+mdqsat_adcs.build.pid=0x8020
+mdqsat_adcs.bootloader.tool=openocd
+mdqsat_adcs.bootloader.file=metroM4/bootloader-metro_m4-v2.0.0-adafruit.5.bin
+mdqsat_adcs.compiler.arm.cmsis.ldflags="-L{runtime.tools.CMSIS-5.4.0.path}/CMSIS/Lib/GCC/" "-L{build.variant.path}" -larm_cortexM4lf_math -mfloat-abi=hard -mfpu=fpv4-sp-d16
+mdqsat_adcs.menu.cache.on=Enabled
+mdqsat_adcs.menu.cache.on.build.cache_flags=-DENABLE_CACHE
+mdqsat_adcs.menu.cache.off=Disabled
+mdqsat_adcs.menu.cache.off.build.cache_flags=
+mdqsat_adcs.menu.speed.120=120 MHz (standard)
+mdqsat_adcs.menu.speed.120.build.f_cpu=120000000L
+mdqsat_adcs.menu.speed.150=150 MHz (overclock)
+mdqsat_adcs.menu.speed.150.build.f_cpu=150000000L
+mdqsat_adcs.menu.speed.180=180 MHz (overclock)
+mdqsat_adcs.menu.speed.180.build.f_cpu=180000000L
+mdqsat_adcs.menu.speed.200=200 MHz (overclock)
+mdqsat_adcs.menu.speed.200.build.f_cpu=200000000L
+mdqsat_adcs.menu.opt.small=Small (-Os) (standard)
+mdqsat_adcs.menu.opt.small.build.flags.optimize=-Os
+mdqsat_adcs.menu.opt.fast=Fast (-O2)
+mdqsat_adcs.menu.opt.fast.build.flags.optimize=-O2
+mdqsat_adcs.menu.opt.faster=Faster (-O3)
+mdqsat_adcs.menu.opt.faster.build.flags.optimize=-O3
+mdqsat_adcs.menu.opt.fastest=Fastest (-Ofast)
+mdqsat_adcs.menu.opt.fastest.build.flags.optimize=-Ofast
+mdqsat_adcs.menu.opt.dragons=Here be dragons (-Ofast -funroll-loops)
+mdqsat_adcs.menu.opt.dragons.build.flags.optimize=-Ofast -funroll-loops
+mdqsat_adcs.menu.maxqspi.50=50 MHz (standard)
+mdqsat_adcs.menu.maxqspi.50.build.flags.maxqspi=-DVARIANT_QSPI_BAUD_DEFAULT=50000000
+mdqsat_adcs.menu.maxqspi.fcpu=CPU Speed / 2
+mdqsat_adcs.menu.maxqspi.fcpu.build.flags.maxqspi=-DVARIANT_QSPI_BAUD_DEFAULT=({build.f_cpu})
+mdqsat_adcs.menu.usbstack.arduino=Arduino
+mdqsat_adcs.menu.usbstack.tinyusb=TinyUSB
+mdqsat_adcs.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
+mdqsat_adcs.menu.debug.off=Off
+mdqsat_adcs.menu.debug.on=On
+mdqsat_adcs.menu.debug.on.build.flags.debug=-g
