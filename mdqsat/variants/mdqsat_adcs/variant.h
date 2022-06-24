@@ -110,15 +110,15 @@ static const uint8_t DAC1 = PIN_DAC1;
  */
 
 // UART OBDH (Serial1) - SERCOM 0
-#define PIN_SERIAL1_RX      (19u)
-#define PIN_SERIAL1_TX      (20u)
+#define PIN_SERIAL1_RX      (20u)
+#define PIN_SERIAL1_TX      (21u)
 #define PAD_SERIAL1_TX      (UART_TX_PAD_0)
 #define PAD_SERIAL1_RX      (SERCOM_RX_PAD_1)
 #define SERCOM_SERIAL1		  sercom0
 
 // UART GPS (Serial2) - SERCOM 1
-#define PIN_SERIAL2_RX      (21u)
-#define PIN_SERIAL2_TX      (22u)
+#define PIN_SERIAL2_RX      (22u)
+#define PIN_SERIAL2_TX      (23u)
 #define PAD_SERIAL2_TX      (UART_TX_PAD_0)
 #define PAD_SERIAL2_RX      (SERCOM_RX_PAD_1)
 #define SERCOM_SERIAL2		  sercom1
@@ -129,9 +129,9 @@ static const uint8_t DAC1 = PIN_DAC1;
 #define SPI_INTERFACES_COUNT 1
 
 //*****SD SPI BUS******
-#define PIN_SPI_MISO         (29u)
-#define PIN_SPI_MOSI         (31u)
-#define PIN_SPI_SCK          (30u)
+#define PIN_SPI_MISO         (30u)
+#define PIN_SPI_MOSI         (32u)
+#define PIN_SPI_SCK          (31u)
 #define PIN_SPI_SS           (5u)
 #define PERIPH_SPI           sercom5
 #define PAD_SPI_TX           SPI_PAD_0_SCK_1
@@ -156,8 +156,8 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
 #define WIRE_INTERFACES_COUNT 3
 
 //Internal I2C
-#define PIN_WIRE_SDA         (27u)
-#define PIN_WIRE_SCL         (28u)
+#define PIN_WIRE_SDA         (28u)
+#define PIN_WIRE_SCL         (29u)
 #define PERIPH_WIRE          sercom4
 #define WIRE_IT_HANDLER      SERCOM4_Handler
 #define WIRE_IT_HANDLER_0    SERCOM4_0_Handler
@@ -169,8 +169,8 @@ static const uint8_t SDA = PIN_WIRE_SDA;
 static const uint8_t SCL = PIN_WIRE_SCL;
 
 //External I2C 1
-#define PIN_WIRE1_SDA        (23u)
-#define PIN_WIRE1_SCL        (24u)
+#define PIN_WIRE1_SDA        (24u)
+#define PIN_WIRE1_SCL        (25u)
 #define PERIPH_WIRE1         sercom2
 #define WIRE1_IT_HANDLER     SERCOM2_Handler
 #define WIRE1_IT_HANDLER_0   SERCOM2_0_Handler
@@ -182,8 +182,8 @@ static const uint8_t SDA1 = PIN_WIRE1_SDA;
 static const uint8_t SCL1 = PIN_WIRE1_SCL;
 
 //External I2C 2
-#define PIN_WIRE2_SDA        (25u)
-#define PIN_WIRE2_SCL        (26u)
+#define PIN_WIRE2_SDA        (26u)
+#define PIN_WIRE2_SCL        (27u)
 #define PERIPH_WIRE2         sercom3
 #define WIRE2_IT_HANDLER     SERCOM3_Handler
 #define WIRE2_IT_HANDLER_0   SERCOM3_0_Handler
@@ -198,9 +198,9 @@ static const uint8_t SCL2 = PIN_WIRE2_SCL;
 /*
  * USB
  */
-#define PIN_USB_HOST_ENABLE (36ul)
-#define PIN_USB_DM          (32ul)
-#define PIN_USB_DP          (33ul)
+#define PIN_USB_HOST_ENABLE (37ul)
+#define PIN_USB_DM          (33ul)
+#define PIN_USB_DP          (34ul)
 
 /*
  * I2S Interfaces
