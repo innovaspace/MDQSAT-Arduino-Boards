@@ -2,7 +2,7 @@
   "packages":
   [
     {
-      "name": "obdh",
+      "name": "innovaspace",
       "maintainer": "Innova Space",
       "websiteURL": "https://www.innova-space.com",
       "email" : "luriarte@innova-space.com",
@@ -161,6 +161,58 @@
           "archiveFileName": "MDQSAT_0.2.1.zip",
           "checksum": "SHA-256:5C47BC0973750BEA4AD1483C490A1A3E61AD3CB3BC85D26C054F7693906546BB",
           "size": "6387753",
+          "boards": [
+            {
+              "name": "MDQubeSAT-1 OBDH"
+            },
+            {
+              "name": "MDQubeSAT-1 ADCS"
+            },
+            {
+              "name": "MDQSAT-1 OBDH"
+            },
+            {
+              "name": "MDQSAT-1 ADCS"
+            }
+          ],
+          "toolsDependencies":
+          [
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.8.0-48-gb176eee"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.10.0-arduino9"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS-Atmel",
+              "version": "1.2.0"
+            }
+          ]
+        },
+        {
+          "name": "Innova Space (MDQubeSAT) BOARDS",
+          "architecture": "samd",
+          "version": "0.2.2",
+          "category": "Contributed",
+          "url": "https://github.com/innovaspace/MDQSAT-Arduino-Boards/raw/main/boards_ide/MDQSAT_0.2.2.zip",
+          "archiveFileName": "MDQSAT_0.2.2.zip",
+          "checksum": "SHA-256:FE5A49A28DA7AEEFC15B8276D06237025B79BCF6900C4E901FC942FD9146D55F",
+          "size": "6387813",
           "boards": [
             {
               "name": "MDQubeSAT-1 OBDH"
