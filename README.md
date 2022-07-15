@@ -18,4 +18,4 @@ Adafruit boards:
 
 MDQSAT Boards
 
-    arduino-cli core install obdh:samd --additional-urls "https://github.com/innovaspace/MDQSAT-Arduino-Boards/raw/main/boards_ide/package_innovaspace_index.json"
+    arduino-cli core install innovaspace:samd --additional-urls "https://github.com/innovaspace/MDQSAT-Arduino-Boards/raw/main/boards_ide/package_innovaspace_index.json"
