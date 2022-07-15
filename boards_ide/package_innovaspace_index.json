@@ -211,8 +211,8 @@
           "category": "Contributed",
           "url": "https://github.com/innovaspace/MDQSAT-Arduino-Boards/raw/main/boards_ide/MDQSAT_0.2.2.zip",
           "archiveFileName": "MDQSAT_0.2.2.zip",
-          "checksum": "SHA-256:FE5A49A28DA7AEEFC15B8276D06237025B79BCF6900C4E901FC942FD9146D55F",
-          "size": "6387813",
+          "checksum": "SHA-256:4716B47B3BAE7896AE4F82074F67D69DC13F4A1685AAF8A52E0EBDAF1A2B5364",
+          "size": "6387814",
           "boards": [
             {
               "name": "MDQubeSAT-1 OBDH"
