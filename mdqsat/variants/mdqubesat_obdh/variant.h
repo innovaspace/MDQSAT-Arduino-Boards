@@ -128,13 +128,13 @@ static const uint8_t ATN = PIN_ATN;
 #define SPI_INTERFACES_COUNT 3
 
 //*****RADIO SPI BUS******
-#define PIN_SPI_MISO         (40u) // 39u en placa fabricada
+#define PIN_SPI_MISO         (39u) // 39u en placa fabricada
 #define PIN_SPI_MOSI         (21u)
 #define PIN_SPI_SCK          (20u)
-#define PIN_SPI_SS           (39u) // 40u en placa fabricada
+#define PIN_SPI_SS           (40u) // 40u en placa fabricada
 #define PERIPH_SPI           sercom1
 #define PAD_SPI_TX           SPI_PAD_0_SCK_1
-#define PAD_SPI_RX           SERCOM_RX_PAD_3 //SERCOM_RX_PAD_2 en placa fabricada
+#define PAD_SPI_RX           SERCOM_RX_PAD_2 //SERCOM_RX_PAD_2 en placa fabricada
 
 static const uint8_t SS	  = PIN_SPI_SS ;	
 static const uint8_t MOSI = PIN_SPI_MOSI ;
